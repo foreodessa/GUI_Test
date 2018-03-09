@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
+            failures="1"
             tests="1">
 
   <testsuite name="e2e.guiTestThree"
-    errors="0" failures="0" hostname="" id="" package="e2e" skipped="0"
-    tests="1" time="10.85" timestamp="Fri, 09 Mar 2018 13:05:15 GMT">
+    errors="0" failures="1" hostname="" id="" package="e2e" skipped="0"
+    tests="1" time="14.40" timestamp="Fri, 09 Mar 2018 13:26:35 GMT">
   
-    <testcase name="Test GitHub" classname="e2e.guiTestThree" time="10.85" assertions="2">
+    <testcase name="Demo adidas" classname="e2e.guiTestThree" time="14.40" assertions="2">
 
-    
+      <failure message="Expected element &lt;#lst-ib&gt; to have css property &#34;display&#34; - element was not found">    at Object.Demo adidas (C:\Users\johnsmar\Documents\GitHub\GUI_Test\tests\e2e\guiTestThree.js:13:19)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)</failure>
 
     
     </testcase>

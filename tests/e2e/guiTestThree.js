@@ -1,20 +1,26 @@
 var conf = require('../../nightwatch.conf.js');
 
 module.exports = {
-  'Test GitHub': function (browser) {
-    browser
-      .url('http://www.adidas.fi/')   // visit the url
-      .waitForElementVisible('body'); // wait for the body to be rendered
-      // check if we are seeing the Mobile Version of GitHub
-      browser.element('css selector', '.switch-to-desktop', function(result) {
-        if(result.status != -1) { //Element exists, do something
-          browser.click('.switch-to-desktop')
-          .waitForElementVisible('body'); // wait for the body to be rendered
-        }
-      });
-    // part two:
-    browser
-      .assert.containsText('body', 'dwyl.com') // assert body contains text
-      .end();
-    }
+  'Demo adidas' : function (client) {
+    client
+      .url('http://www.adidas.fi/')
+      .pause(1000);
+
+    // expect element  to be present in 1000ms
+    client.expect.element('body').to.be.present.before(1000);
+
+    // expect element <#lst-ib> to have css property 'display'
+    client.expect.element('#lst-ib').to.have.css('display');
+
+    // expect element  to have attribute 'class' which contains text 'vasq'
+    client.expect.element('body').to.have.attribute('class').which.contains('vasq');
+
+    // expect element <#lst-ib> to be an input tag
+    client.expect.element('#lst-ib').to.be.an('input');
+
+    // expect element <#lst-ib> to be visible
+    client.expect.element('#lst-ib').to.be.visible;
+
+    client.end();
+  }
 };

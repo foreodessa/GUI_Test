@@ -14,7 +14,7 @@ module.exports = {
       });
     // part two:
     browser
-      .assert.containsText('body', 'dwyl.com') // assert body contains text
+      .assert.containsText('body', 'adidas') // assert body contains text
       .end();
     }
 };

@@ -5,9 +5,9 @@
 
   <testsuite name="e2e.guiTestTwo"
     errors="0" failures="0" hostname="" id="" package="e2e" skipped="0"
-    tests="1" time="10.36" timestamp="Fri, 09 Mar 2018 13:05:26 GMT">
+    tests="1" time="45.80" timestamp="Fri, 09 Mar 2018 13:26:49 GMT">
   
-    <testcase name="Test GitHub" classname="e2e.guiTestTwo" time="10.36" assertions="2">
+    <testcase name="Search for EQT" classname="e2e.guiTestTwo" time="45.80" assertions="2">
 
     
 
