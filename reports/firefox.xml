@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="0">
+
+  <testsuite name="firefox"
+    errors="0" failures="0" hostname="" id="" package="firefox" skipped="0"
+    tests="0" time="0.000" timestamp="Fri, 09 Mar 2018 11:51:35 GMT">
+  
+
+  
+    <system-err>
+        Error while running [E2e / Firefox / Demo test GitHub]:
+
+  ReferenceError: conf is not defined
+    at Object.Demo test GitHub (C:\Users\johnsmar\Documents\GitHub\GUI_Test\tests\e2e\firefox.js:19:23)
+    at Module.call (C:\Users\johnsmar\Documents\GitHub\GUI_Test\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\johnsmar\Documents\GitHub\GUI_Test\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\johnsmar\Documents\GitHub\GUI_Test\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\johnsmar\Documents\GitHub\GUI_Test\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\johnsmar\Documents\GitHub\GUI_Test\node_modules\q\q.js:796:13)
+    at C:\Users\johnsmar\Documents\GitHub\GUI_Test\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\johnsmar\Documents\GitHub\GUI_Test\node_modules\q\q.js:137:13)
+    at flush (C:\Users\johnsmar\Documents\GitHub\GUI_Test\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

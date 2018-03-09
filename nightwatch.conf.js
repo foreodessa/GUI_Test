@@ -1,4 +1,4 @@
-var seleniumServer = require('selenium-server');
+const seleniumServer = require('selenium-server');
 
 module.exports = {
   "src_folders" : ["tests"],
@@ -15,8 +15,8 @@ module.exports = {
     "host" : "127.0.0.1",
     "port" : 4444,
     "cli_args" : {
-      "webdriver.chrome.driver" : "./bin/chromedriver",
-      "webdriver.gecko.driver" : "./bin/geckodriver"
+      "webdriver.chrome.driver" : "./bin/chromedriver.exe",
+      "webdriver.gecko.driver" : "./bin/geckodriver.exe"
     }
   },
 
@@ -37,4 +37,4 @@ module.exports = {
       }
     }
   }
-}
+};
