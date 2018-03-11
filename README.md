@@ -4,9 +4,9 @@ Case Study, nuff said.
 
 The three UI tests are 
  
-### 1) 
+### 1) Finding delivery status link
 
-### 2)
+### 2) 
 
 ### 3)
 
