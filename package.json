@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "e2e": "nightwatch --config nightwatch.conf.js"
+    "e2e": "nightwatch --config nightwatch.conf.js "
   },
   "author": "Marcus Johnson",
   "license": "ISC",
   "dependencies": {
-    "nightwatch": "^0.9.20",
     "selenium-server": "^3.10.0"
+  },
+  "devDependencies": {
+    "nightwatch": "^0.9.20",
+    "nightwatch-html-reporter": "^2.0.5"
   }
 }

@@ -6,7 +6,7 @@ module.exports = {
       .url('http://www.adidas.fi/')
       .waitForElementVisible('body', 1000)
       .waitForElementVisible('header', 1000)
-      .click()
+      .click('div[class="proposals___1z_1d"] a.first')
 
       //.sendKeys(Key.ENTER)
       .pause(1000)

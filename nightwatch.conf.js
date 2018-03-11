@@ -22,20 +22,30 @@ module.exports = {
 
   "test_settings" : {
     "default" : {
+    "selenium_port"  : 4444,
+    "selenium_host"  : "localhost",
       "globals": {
         "waitForConditionTimeout": 5000 // sometimes internet is slow so wait.
       },
       "desiredCapabilities": {
-        "browserName": "firefox",
-        "marionette": true,
+        "browserName": "chrome",
+        "javascriptEnabled": true,
         "acceptSslCerts" : true,
-        "cssSelectorsEnabled": true
+        "chromeOptions":{"args" : ["disable-web-security"]}
       }
     },
-
+    
     "chrome" : {
       "desiredCapabilities": {
         "browserName": "chrome",
+        "javascriptEnabled": true
+      }
+    },
+
+    "firefox" : {
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "marionette": true,
         "acceptSslCerts" : true,
         "cssSelectorsEnabled": true
       }
