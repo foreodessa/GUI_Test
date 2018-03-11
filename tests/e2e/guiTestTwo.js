@@ -1,7 +1,7 @@
 var conf = require('../../nightwatch.conf.js');
 
 module.exports = {
-  'Demo test Google' : function (browser) {
+  'Finding to check a order or delivery status' : function (browser) {
     browser
       .url('http://www.adidas.fi/')
       .waitForElementVisible('body', 1000)

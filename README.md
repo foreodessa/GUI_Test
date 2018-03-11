@@ -2,13 +2,13 @@
 
 Case Study, nuff said.
 
-The three UI tests are 
+### UI Tests: 
  
-### 1) Finding delivery status link
+1. Finding to check a order or delivery status
 
-### 2) 
+2. Product code is found on product page
 
-### 3)
+3. Succsesfully going back to the main page from product page
 
 ### Reports
 
