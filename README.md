@@ -14,6 +14,8 @@ The three UI tests are
 
 The reports can be found the in ./reports/e2e
 
+(reports will pop up in your browser after you excution)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -26,6 +28,7 @@ What things you need to install the software and how to install them
 node.js
 Nightwatch.js
 selenium-server
+Nightwatch html reporter
 
 ```
 
@@ -95,7 +98,12 @@ npm install nightwatch --save-dev
 npm install selenium-server --save-dev
 ```
 
-#### 5) Installing both Chrome and Firefox drivers  
+### 5) Install `nightwatch html reporter`
+
+```
+npm install nightwatch-html reporter -g
+```
+#### 6) Installing both Chrome and Firefox drivers  
 
 Download and copy the lastest file [Chrome driver](https://sites.google.com/a/chromium.org/chromedriver/)  and [Firefox driver](https://github.com/mozilla/geckodriver/releases) into the the bin folder.  
 
