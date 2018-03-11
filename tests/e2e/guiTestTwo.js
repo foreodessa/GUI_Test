@@ -1,20 +1,22 @@
 var conf = require('../../nightwatch.conf.js');
 
 module.exports = {
-  'Search for EQT': function (browser) {
+  'Demo test Google' : function (browser) {
     browser
-      .url('http://www.adidas.fi/')   // visit the url
-      .waitForElementVisible('body'); // wait for the body to be rendered
-      // check if we are seeing the Mobile Version of GitHub
-      browser.element('css selector', '.switch-to-desktop', function(result) {
-        if(result.status != -1) { //Element exists, do something
-          browser.click('.switch-to-desktop')
-          .waitForElementVisible('body'); // wait for the body to be rendered
-        }
-      });
-    // part two:
-    browser
-      .assert.containsText('body', 'adidas') // assert body contains text
+      .url('http://www.adidas.fi/')
+      .waitForElementVisible('body', 1000)
+      .waitForElementVisible('header', 1000)
+browser.elements('css selector', 'button', function(elements) {
+  elements.value.forEach(function(element){
+    browser.elementIdAttribute(element.ELEMENT, 'class', function(attribute) {
+      console.log(attribute.value);
+    });
+  });
+})
+
+      //.sendKeys(Key.ENTER)
+      .pause(1000)
+      .assert.containsText('body', 'men')
       .end();
-    }
-};
+  }
+}; 

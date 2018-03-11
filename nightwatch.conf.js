@@ -27,7 +27,9 @@ module.exports = {
       },
       "desiredCapabilities": {
         "browserName": "firefox",
-        "marionette": true
+        "marionette": true,
+        "acceptSslCerts" : true,
+        "cssSelectorsEnabled": true
       }
     },
 
