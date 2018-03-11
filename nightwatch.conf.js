@@ -35,7 +35,9 @@ module.exports = {
 
     "chrome" : {
       "desiredCapabilities": {
-        "browserName": "chrome"
+        "browserName": "chrome",
+        "acceptSslCerts" : true,
+        "cssSelectorsEnabled": true
       }
     }
   }
