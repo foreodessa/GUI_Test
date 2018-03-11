@@ -1,6 +1,14 @@
-# adidas API and GUI Testing
+# adidas GUI Testing
 
 Case Study, nuff said.
+
+The three UI tests are 
+ 
+### 1) 
+
+### 2)
+
+### 3)
 
 ## Getting Started
 
