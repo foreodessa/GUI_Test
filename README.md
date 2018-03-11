@@ -103,7 +103,7 @@ npm install selenium-server --save-dev
 ```
 npm install nightwatch-html reporter -g
 ```
-### 6) Installing both Chrome and Firefox drivers  
+### 6) Installing both Chrome and Firefox drivers (if both are are not in the /bin)
 
 Download and copy the lastest file [Chrome driver](https://sites.google.com/a/chromium.org/chromedriver/)  and [Firefox driver](https://github.com/mozilla/geckodriver/releases) into the the bin folder.  
 
