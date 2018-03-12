@@ -31,7 +31,7 @@ module.exports = {
         "browserName": "chrome",
         "javascriptEnabled": true,
         "acceptSslCerts" : true,
-        "chromeOptions":{"args" : ["disable-web-security"]}
+        "chromeOptions":{"args" : ["disable-web-security", "start-fullscreen"]}
       }
     },
     
