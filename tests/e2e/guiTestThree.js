@@ -16,7 +16,7 @@ module.exports = {
       .assert.containsText('#page-content','WANDERLUST YOGA TWO-IN-ONE TANK TOP')
       .click('.column.column-logo a')
       .pause(1000)
-      .assert.urlEquals('https://www.adidas.fi')
+      .assert.urlEquals('https://www.adidas.fi/')
       .end();
     }
 };
